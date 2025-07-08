@@ -20,14 +20,11 @@ public class Start {
         meins.setSize(1024, 768);                   //STELLT GRÖßE EIN
         meins.setResizable(false);                              //STELLT EIN OB BENUTZER FENSTER VERÄNDERN KANN
         meins.setLocationRelativeTo(null);                      //ZENTRIERT DAS FENSTER AUF DEM BILDSCHIRM
+        meins.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  //SCHLIEßT DAS FENSTER WENN MAN AUF X DRÜCKT
+        meins.setVisible(true);                                 //SICHTBARKEIT
 
         //GUI-INHALT
         meins.add(new JLabel("Hello World!"));              //FÜGT TEXT HINZU
-
-
-        meins.setVisible(true);                                 //SICHTBARKEIT
-
-        meins.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);  //SCHLIEßT DAS FENSTER WENN MAN AUF X DRÜCKT
 
         //FENSTER ÜBER "BEENDEN" BEENDEN
         close.addActionListener(new ActionListener() {
